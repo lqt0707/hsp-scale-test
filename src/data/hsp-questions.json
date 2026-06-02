@@ -1,0 +1,185 @@
+{
+  "scaleInfo": {
+    "name": "高敏感人格量表 (HSP Scale)",
+    "author": "Elaine N. Aron & Arthur Aron (1997)",
+    "description": "本量表由 Elaine Aron 博士开发，用于评估个体的感觉处理敏感性（Sensory Processing Sensitivity, SPS）。量表共 27 题，采用 7 点 Likert 量表计分。",
+    "totalItems": 27,
+    "likertScale": {
+      "min": 1,
+      "max": 7,
+      "labels": {
+        "1": "完全不符合",
+        "2": "比较不符合",
+        "3": "有些不符合",
+        "4": "一般/不确定",
+        "5": "有些符合",
+        "6": "比较符合",
+        "7": "完全符合"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": "我似乎能察觉到环境中细微的事物。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 2,
+      "text": "其他人的情绪会影响我。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 3,
+      "text": "我对咖啡因等刺激物质比较敏感，容易有强烈反应。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 4,
+      "text": "我觉得自己是一个容易感动的人。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 5,
+      "text": "我似乎比大多数人更能察觉到他人内心的情绪变化。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 6,
+      "text": "我觉得自己并不比大多数人更容易被外界刺激所影响。",
+      "reverseScored": true,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 7,
+      "text": "我的想象力很丰富，经常沉浸在各种想象和幻想中。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 8,
+      "text": "我觉得自己被外界的刺激弄得手忙脚乱。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 9,
+      "text": "在需要竞争或被他人注视的情况下，我会紧张到表现失常。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 10,
+      "text": "我容易饥饿，不按时进食时情绪波动明显。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 11,
+      "text": "我发现自己在日常生活中需要经常独处来恢复精力。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 12,
+      "text": "我很少注意到环境中的细微变化。",
+      "reverseScored": true,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 13,
+      "text": "当需要同时做很多事情时，我会感到非常不安。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 14,
+      "text": "我很容易受到惊吓。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 15,
+      "text": "我对美术、音乐等艺术形式有深刻的情感体验。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 16,
+      "text": "我的生活很充实，内心世界很丰富。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 17,
+      "text": "我很容易受到强烈光线、刺鼻气味、粗糙面料或附近刺耳声音的影响。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 18,
+      "text": "面对大量信息或任务时，我能从容应对。",
+      "reverseScored": true,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 19,
+      "text": "小时候父母或老师觉得我是个敏感的孩子。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 20,
+      "text": "我喜欢细腻、精妙的事物。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 21,
+      "text": "同时要做很多事的时候，我会烦躁不安。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 22,
+      "text": "做白日梦对我来说是很自然的事情。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    },
+    {
+      "id": 23,
+      "text": "我似乎对周围环境的气氛有很强的感受力。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 24,
+      "text": "强烈的感觉输入（如响亮嘈杂的声音）会让我很不舒服。",
+      "reverseScored": false,
+      "dimension": "sensorySensitivity"
+    },
+    {
+      "id": 25,
+      "text": "别人觉得某件事并不怎么样，但对我来说却意义重大。",
+      "reverseScored": false,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 26,
+      "text": "我不太容易被周围发生的事情所影响。",
+      "reverseScored": true,
+      "dimension": "emotionalReactivity"
+    },
+    {
+      "id": 27,
+      "text": "我好像能感受到别人感受不到的细微差别。",
+      "reverseScored": false,
+      "dimension": "aestheticSensitivity"
+    }
+  ]
+}

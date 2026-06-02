@@ -1,7 +1,8 @@
 {
-  "name": "hsp-test-temp",
-  "version": "0.1.0",
-  "private": true,
+  "name": "hsp-scale-test",
+  "version": "1.0.0",
+  "description": "HSP 高敏感人格量表在线测试工具 — 基于 Elaine Aron 博士 27 题量表，支持 AI 深度分析与报告导出",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +10,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "html2canvas-pro": "^2.0.4",
+    "jspdf": "^4.2.1",
     "next": "16.2.7",
+    "openai": "^6.41.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

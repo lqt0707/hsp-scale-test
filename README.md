@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HSP Scale Test — 高敏感人格量表在线测试
 
-## Getting Started
+A gentle, beautifully crafted online self-assessment tool based on **Dr. Elaine N. Aron's 27-item Highly Sensitive Person (HSP) Scale**. Built with Next.js, featuring AI-powered deep analysis and report export.
 
-First, run the development server:
+基于 **Elaine N. Aron 博士的 27 题高敏感量表**，一款设计温柔的在线自我评估工具。支持 AI 深度分析、报告导出。使用 Next.js 构建。
+
+## Features / 功能
+
+- ✅ **Standardized HSP Scale** — All 27 items with 7-point Likert scale, including reverse scoring and 3 subdimensions
+- ✅ **3 Subdimensions** — Sensory Sensitivity, Emotional Reactivity, Aesthetic Sensitivity
+- ✅ **AI Deep Analysis** — Powered by DeepSeek API, provides personalized interpretation based on your scores
+- ✅ **Report Export** — Export full analysis as PDF or image
+- ✅ **Beautiful UI** — Gentle, nature-inspired design with calming aesthetics
+- ✅ **Fully Responsive** — Works on desktop and mobile
+
+## Tech Stack / 技术栈
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | [Next.js 16](https://nextjs.org/) (App Router) |
+| UI | React 19 + Tailwind CSS 4 |
+| Fonts | Fraunces (display) + DM Sans (body) |
+| Charts | Recharts |
+| AI API | DeepSeek (OpenAI-compatible) |
+| Export | html2canvas-pro + jsPDF |
+
+## Getting Started / 快速开始
+
+### Prerequisites / 前置要求
+
+- Node.js >= 18
+- DeepSeek API key (optional, for AI analysis)
+
+### Installation
+
+```bash
+git clone https://github.com/<your-username>/hsp-scale-test.git
+cd hsp-scale-test
+npm install
+```
+
+### Configuration
+
+Copy `.env.example` to `.env.local` and add your DeepSeek API key:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local`:
+
+```
+DEEPSEEK_API_KEY=sk-your-api-key-here
+```
+
+> The app works without an API key — AI analysis will be unavailable, but the test itself functions fully.
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure / 项目结构
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── api/analyze/     # AI analysis API route
+│   ├── result/          # Results page
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Landing page
+├── components/
+│   ├── AIAnalysis.tsx   # AI analysis display
+│   ├── ExportContent.tsx
+│   ├── ExportModal.tsx
+│   ├── HSPTest.tsx      # Main test component
+│   ├── ProgressBar.tsx
+│   ├── QuestionCard.tsx
+│   └── ResultDisplay.tsx
+├── data/
+│   └── hsp-questions.json  # All 27 questions & metadata
+└── utils/
+    ├── export.ts        # PDF/image export utilities
+    └── scoring.ts       # Scoring & dimension calculation
+```
 
-## Learn More
+## Scoring / 计分说明
 
-To learn more about Next.js, take a look at the following resources:
+- **Total score range**: 27–189
+- **Cutoff**: ≥ 132 suggests high sensitivity (per Aron's research)
+- **3 dimensions**: Sensory Sensitivity, Emotional Reactivity, Aesthetic Sensitivity
+- Some items are **reverse-scored**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See `src/utils/scoring.ts` and `src/data/hsp-questions.json` for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License / 许可
 
-## Deploy on Vercel
+[MIT](LICENSE) © 2025
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Disclaimer / 免责声明
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This tool is for **self-understanding and educational purposes only**. It does **not** constitute a clinical diagnosis. If you have concerns about your mental health, please consult a qualified professional.
+
+本工具仅供**自我了解与教育参考**，不构成临床诊断。如有心理健康方面的疑虑，请咨询专业人士。
